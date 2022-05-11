@@ -1,13 +1,14 @@
 // Tasarım Örneği
-// Text Örnekleri
+// Text girdi Örnekleri
+// Checkbox / Dropdown / Radio button /
+// slider / texffield / switch
 
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter/widgets.dart';
 import 'package:video_player/video_player.dart';
 
 import 'album.dart';
+import 'input_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -277,6 +278,17 @@ class Sinif extends StatelessWidget {
           onPressed: () {
             Navigator.of(context).push(MaterialPageRoute(
               builder: (context) => AlbumPage(),
+            ));
+            // sor(context);
+          },
+        ),
+        ElevatedButton(
+          child: const Text(
+            "Girdi Sayfası",
+          ),
+          onPressed: () {
+            Navigator.of(context).push(MaterialPageRoute(
+              builder: (context) => InputPage(),
             ));
             // sor(context);
           },
